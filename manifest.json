@@ -1,0 +1,21 @@
+{
+  "name": "heapenson",
+  "version": "0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": [
+        "main.css"
+      ],
+      "js": [
+        "jquery-2.1.1.min.js",
+        "debounce.js",
+        "main.js"
+        // Add any JS files you'll be using to this array.
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["*://*/*"]
+}
